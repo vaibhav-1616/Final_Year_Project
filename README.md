@@ -6,10 +6,10 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 
 <br>
 
-### Tech. used : 
+### Tech stack : 
 <ol>
   <li>
-    <b>opencv-python:</b> Manages your webcam hardware, captures the live video stream, and processes frames. OpenCV (Open Source Computer Vision Library) in Python is a powerful tool for processing and analyzing images and videos.
+    <b>opencv-python:</b> Manages your webcam hardware, captures the live video stream, and processes frames. 
   </li>
   <li>
     <b>mediapipe:</b>: Google's open-source machine learning framework that handles complex 3D hand tracking automatically.
