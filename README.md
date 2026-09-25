@@ -22,20 +22,8 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
   </li>
 </ol>
 <br>
-Webcam
-   │
-   ▼
-HandTracker
-(MediaPipe)
-   │
-   │  Hand landmarks
-   ▼
-GestureEngine
-(FSM + Gesture Logic)
-   │
-   ▼
-CursorController
-(EMA + PyAutoGUI)
-   │
-   ▼
-Computer UI
+
+### Gesture mapping : 
+
+<img width="415" height="395" alt="image" src="https://github.com/user-attachments/assets/67b9661a-ad50-4124-b24d-0b456bfe7d09" />
+
