@@ -9,15 +9,15 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 ### Tech. used : 
 <ol>
   <li>
-    **opencv-python**: Manages your webcam hardware, captures the live video stream, and processes frames. OpenCV (Open Source Computer Vision Library) in Python is a powerful tool for processing and analyzing images and videos.
+    <b>opencv-python:</b> Manages your webcam hardware, captures the live video stream, and processes frames. OpenCV (Open Source Computer Vision Library) in Python is a powerful tool for processing and analyzing images and videos.
   </li>
   <li>
-    **mediapipe**: Google's open-source machine learning framework that handles complex 3D hand tracking automatically.
+    <b>mediapipe:</b>: Google's open-source machine learning framework that handles complex 3D hand tracking automatically.
   </li>
   <li>
-    **pyautogui**: Communicates directly with your operating system to trigger physical mouse movements and mouse clicks.
+    <b>pyautogui:</b>: Communicates directly with your operating system to trigger physical mouse movements and mouse clicks.
   </li>
   <li>
-    **numpy**: Handles the underlying mathematical matrix operations efficiently so your program runs quickly.
+    <b>numpy:</b>: Handles the underlying mathematical matrix operations efficiently so your program runs quickly.
   </li>
 </ol>
