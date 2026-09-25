@@ -21,7 +21,6 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
     <b>numpy:</b>: Handles the underlying mathematical matrix operations efficiently so your program runs quickly.
   </li>
 </ol>
-<br>
 
 ### Gesture mapping : 
 
