@@ -26,3 +26,19 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 
 <img width="350" height="340" alt="image" src="https://github.com/user-attachments/assets/d8b05b05-4c4e-4e6f-ba10-a84446461209" />
 
+### Future work plan (To be implemented) :
+<ol>
+  <li>
+    Adaptive Gesture Calibration: 
+Automatically calibrate pinch/gesture thresholds for different users and hand sizes instead of relying only on fixed distance thresholds.
+  </li>
+Robustness Under Variable Lighting:
+Improve hand-tracking reliability using adaptive image preprocessing, illumination normalization, and confidence-based detection handling.
+  <li>
+    Advanced Multimodal Interaction:
+Extend the system beyond hand gestures by integrating voice commands and optional eye-blink/FaceMesh-based interaction for users with limited hand mobility.
+  </li>
+Real-Time Performance Optimization:
+Optimize the camera-processing pipeline, landmark processing, cursor smoothing, and dashboard rendering to reduce latency and maintain stable real-time interaction.
+</ol>
+
