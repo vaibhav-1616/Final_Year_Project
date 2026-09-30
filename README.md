@@ -28,7 +28,7 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 
 ### Underlying System Architecture : 
 
-<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/aeeea449-4360-4a2e-9bb0-5851fa571009" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/aeeea449-4360-4a2e-9bb0-5851fa571009" />
 
 ### Future work plan (To be implemented) :
 <ol>
