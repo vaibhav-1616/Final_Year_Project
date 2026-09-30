@@ -1,4 +1,4 @@
-<img width="1408" height="768" alt="VIRTUAL CURSOR ARCHITECTURE" src="https://github.com/user-attachments/assets/e2b03319-dd5f-42d3-91e3-88b4a89020e5" />## Final Year BTech. Project
+## Final Year BTech. Project
 An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Technology <br>
 
 ### The project pipeline: 
@@ -28,7 +28,7 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 
 ### Underlying System Architecture : 
 
-<img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/aeeea449-4360-4a2e-9bb0-5851fa571009" />
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/aeeea449-4360-4a2e-9bb0-5851fa571009" />
 
 ### Future work plan (To be implemented) :
 <ol>
