@@ -2,7 +2,7 @@
 An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Technology <br>
 
 ### The project pipeline: 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/df20c8f6-6b16-48bc-98f7-3951ec8af4d1" />
+<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/df20c8f6-6b16-48bc-98f7-3951ec8af4d1" />
 
 <br>
 
@@ -24,7 +24,7 @@ An AI-Driven Touchless Human-Computer Interaction (HCI) System for Assistive Tec
 
 ### Gesture mapping : 
 
-<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/d8b05b05-4c4e-4e6f-ba10-a84446461209" />
+<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/d8b05b05-4c4e-4e6f-ba10-a84446461209" />
 
 ### Underlying System Architecture : 
 
