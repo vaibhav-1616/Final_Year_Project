@@ -1,8 +1,6 @@
-# ============================================================
-# AI-DRIVEN TOUCHLESS VIRTUAL CURSOR DASHBOARD
-# ============================================================
-# Run:
-# streamlit run Final_implementation\Actual_Dashboard.py
+# AI-DRIVEN TOUCHLESS VIRTUAL CURSOR DASHBOARD (streamlit based )
+
+# Run: streamlit run Final_implementation\Actual_Dashboard.py
 
 import time
 import threading
@@ -13,6 +11,7 @@ import streamlit as st
 from hand_tracker import HandTracker
 from gestures import GestureEngine
 from cursor_controller import CursorController
+from visualizer import Visualizer
 
 from config import (
     CAM_WIDTH,
@@ -89,6 +88,7 @@ class DashboardSystem:
         self.tracker = None
         self.gesture_engine = None
         self.cursor = None
+        self.visualizer = None
 
         self.thread = None
         self.stop_event = threading.Event()
@@ -137,6 +137,14 @@ class DashboardSystem:
             self.tracker = HandTracker()
             self.gesture_engine = GestureEngine()
             self.cursor = CursorController()
+            self.visualizer = Visualizer()
+
+            self.visualizer.initialize_mediapipe_draw(
+                self.tracker.mp_draw,
+                self.tracker.mp_hands
+            )
+
+            prev_frame_time = 0
 
             while not self.stop_event.is_set():
 
@@ -268,11 +276,33 @@ class DashboardSystem:
                         self.cursor.mouse_up()
 
                 # ------------------------------------------------
-                # PUBLISH VISUALIZED FRAME
+                # FPS
                 # ------------------------------------------------
 
-                # HandTracker's returned frame is used directly.
-                # This preserves its actual landmark visualization.
+                current_time = time.time()
+
+                if prev_frame_time:
+                    fps = 1 / (current_time - prev_frame_time)
+                else:
+                    fps = 0
+
+                prev_frame_time = current_time
+
+                # ------------------------------------------------
+                # DRAW OVERLAY (landmarks, state, FPS, pause banner)
+                # ------------------------------------------------
+
+                frame = self.visualizer.draw(
+                    frame,
+                    hand_data,
+                    self.gesture_engine.state,
+                    fps,
+                    self.gesture_engine.paused
+                )
+
+                # ------------------------------------------------
+                # PUBLISH VISUALIZED FRAME
+                # ------------------------------------------------
 
                 rgb_frame = cv2.cvtColor(
                     frame,
@@ -588,16 +618,16 @@ with st.expander("🏗️ System Architecture"):
 Webcam
    │
    ▼
-HandTracker
+Hand_Tracker
 (MediaPipe)
    │
    │  Hand landmarks
    ▼
-GestureEngine
+Gestures
 (FSM + Gesture Logic)
    │
    ▼
-CursorController
+Cursor_Controller
 (EMA + PyAutoGUI)
    │
    ▼

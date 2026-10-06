@@ -8,10 +8,10 @@ FRAME_REDUCTION = 100
 
 
 # ----- Cursor Smoothing -----
-SMOOTHING_FACTOR = 0.6
+SMOOTHING_FACTOR = 0.3
 
 # Small movement below this value is ignored to reduce jitter
-CURSOR_DEADBAND = 3
+CURSOR_DEADBAND = 6
 
 # Adaptive smoothing limits
 MIN_SMOOTHING_FACTOR = 0.35
@@ -22,30 +22,30 @@ FAST_MOVEMENT_THRESHOLD = 35
 
 
 # ----- Gesture Distance Thresholds -----
-CLICK_DISTANCE_THRESHOLD = 40
-RIGHT_CLICK_DISTANCE_THRESHOLD = 40
+CLICK_DISTANCE_THRESHOLD = 30 
+RIGHT_CLICK_DISTANCE_THRESHOLD = 30
 SCROLL_DISTANCE_THRESHOLD = 40
 
 
 # ----- Gesture Timing -----
 CLICK_HOLD_TIME = 0.5
 DRAG_HOLD_TIME = 1.0
-DOUBLE_CLICK_WINDOW = 0.4
+DOUBLE_CLICK_WINDOW = 1.0
 
 # Small temporal confirmation period to reduce accidental activation
-GESTURE_STABILITY_TIME = 0.08
+GESTURE_STABILITY_TIME = 0.2
 
 
 # ----- Scrolling -----
-SCROLL_DEADBAND = 4
-SCROLL_MULTIPLIER = 3
+SCROLL_DEADBAND = 3
+SCROLL_MULTIPLIER = 5
 
 
 # ----- Pause / Resume -----
 FIST_HOLD_TIME = 1.0
 
 # Prevent repeated pause/resume toggles while fist remains closed
-FIST_REARM_TIME = 0.8
+FIST_REARM_TIME = 1.0
 
 
 # ----- MediaPipe -----
@@ -64,7 +64,7 @@ STATE_PAUSED = "PAUSED"
 
 
 # ----- Application -----
-WINDOW_NAME = "Virtual Cursor"
+WINDOW_NAME = "Virtual Cursor (HCI SYSTEM)"
 EXIT_KEY = "x"
 
 

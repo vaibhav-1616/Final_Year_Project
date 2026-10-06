@@ -1,4 +1,5 @@
 # VIRTUAL CURSOR - CURSOR / MOUSE CONTROL MODULE
+# THE FILE THAT ACTUALLY INTERACTS WITH THE UNDERLYING OS FOR CURSOR MOVEMENTS USING PyAutoGUI
 
 import math
 import pyautogui
@@ -109,14 +110,16 @@ class CursorController:
         # Interpolate between minimum and maximum smoothing
         ratio = movement / FAST_MOVEMENT_THRESHOLD
 
-        factor = (
-            MAX_SMOOTHING_FACTOR
-            - ratio
-            * (
-                MAX_SMOOTHING_FACTOR
-                - MIN_SMOOTHING_FACTOR
-            )
-        )
+        # factor = (
+        #     MAX_SMOOTHING_FACTOR
+        #     - ratio
+        #     * (
+        #         MAX_SMOOTHING_FACTOR
+        #         - MIN_SMOOTHING_FACTOR
+        #     )
+        # )
+
+        factor = MIN_SMOOTHING_FACTOR + ratio * (MAX_SMOOTHING_FACTOR - MIN_SMOOTHING_FACTOR)
 
         return factor
 
